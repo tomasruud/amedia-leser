@@ -1,6 +1,6 @@
 # Amedia Leser - http://leser.ruud.ninja
 
-Les innhold fra alle Amedia-publikasjoner uten abonnement :eyeglasses:
+Les *alt* innhold fra alle Amedia-publikasjoner uten abonnement :eyeglasses:
 
 Leseren baserer seg på Amedias API. Les mer om dette her http://bed.api.no/api/acpcomposer/v1.1/doc/
 
