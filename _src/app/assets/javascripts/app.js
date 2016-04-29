@@ -49,6 +49,7 @@ $(document).ready(function () {
     $header.hide();
     $main.show();
     $content.html(content);
+    new Foundation.Orbit($('#slide'));
   };
 
   var parse_content = function(raw) {
@@ -57,6 +58,19 @@ $(document).ready(function () {
     output += '<h2>' + raw.title + '</h2>';
     output += '<p class="lead">' + raw.leadText + '</p>';
     output += raw.body;
+
+    if(raw._embedded && raw._embedded.relations) {
+      var extra = raw._embedded.relations;
+
+      for(var index in extra) {
+        var item = extra[index];
+
+        if(item.type !== 'imageRelation')
+          continue;
+
+        output += '<figure><img src="'+item.fields.versions.large.url+'"><figcaption>'+item.caption+'</figcaption></figure>';
+      }
+    }
 
     return output;
   };
