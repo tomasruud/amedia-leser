@@ -17,7 +17,6 @@ var roots = {
 var watchers = {
   css: roots.assets + 'stylesheets/**/*',
   js: roots.assets + 'javascripts/**/*',
-  views: roots.dist + '*.html',
   images: roots.assets + 'images/**/*'
 }
 
@@ -112,7 +111,6 @@ gulp.task('uglify', ['js'], function () {
 gulp.task('watch', function () {
   gulp.watch(watchers.css, ['sass']);
   gulp.watch(watchers.js, ['js']);
-  gulp.watch(watchers.views, ['views']);
   gulp.watch(watchers.images, ['images']);
 });
 

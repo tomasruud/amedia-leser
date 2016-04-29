@@ -1,4 +1,4 @@
-# Amedia Leser - http://leser.ruud.ninja
+# Amedia-leser - http://leser.ruud.ninja
 
 Les *alt* innhold fra alle Amedia-publikasjoner uten abonnement :eyeglasses:
 
