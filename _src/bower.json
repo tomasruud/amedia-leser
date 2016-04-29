@@ -1,5 +1,5 @@
 {
-  "name": "Amedia Leser",
+  "name": "amedia-leser",
   "version": "0.1.0",
   "authors": [
     "Tomas Ruud"
@@ -13,5 +13,8 @@
     "tests"
   ],
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "foundation-sites": "^6.2.1",
+    "material-color": "^2.2.1"
+  }
 }

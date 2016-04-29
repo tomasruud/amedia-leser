@@ -1,0 +1,15 @@
+main {
+  margin-top: rem-calc(100);
+  margin-bottom: rem-calc(100);
+}
+
+#close {
+  position: absolute;
+
+  top: rem-calc(40);
+  right: rem-calc(40);
+  font-size: rem-calc(60);
+  line-height: 1rem;
+
+  cursor: pointer;
+}

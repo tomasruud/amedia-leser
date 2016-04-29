@@ -39,7 +39,7 @@ var dest = {
 };
 
 var sass_options = {
-  includePaths: []
+  includePaths: [roots.bower + 'foundation-sites/scss', roots.bower + 'material-color']
 };
 
 // If dist folder is moved outside the project folder, set force to true

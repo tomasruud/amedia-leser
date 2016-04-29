@@ -1,4 +1,10 @@
-// Add stuff here
-// Use //=require <sass-file|directory> to require files or use regular css @import.
-// The benefit of using //=require is that you're able to use wildcards * to import 
-// entire folders. 
+@import "material-color";
+
+@import "settings";
+@import "foundation";
+
+@include foundation-everything(true);
+
+@import "partials/dock";
+@import "partials/header";
+@import "partials/main";

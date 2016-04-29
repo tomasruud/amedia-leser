@@ -1,0 +1,12 @@
+header {
+  height: 100%;
+  display: flex;
+
+  div {
+    width: 100%;
+  }
+}
+
+header.docked {
+  height: rem-calc(60);
+}
