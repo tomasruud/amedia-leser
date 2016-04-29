@@ -1,0 +1,17 @@
+{
+  "name": "Amedia Leser",
+  "version": "0.1.0",
+  "authors": [
+    "Tomas Ruud"
+  ],
+  "description": "Les Amedia-publikasjoner uten abonnement",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}
