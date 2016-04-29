@@ -17,7 +17,7 @@ var roots = {
 var watchers = {
   css: roots.assets + 'stylesheets/**/*',
   js: roots.assets + 'javascripts/**/*',
-  views: roots.app + 'views/**/*',
+  views: roots.dist + '*.html',
   images: roots.assets + 'images/**/*'
 }
 
@@ -25,14 +25,12 @@ var files = {
   stylesheets: ['stylesheets/app.scss'],
   javascripts: ['javascripts/app.js'],
   images: ['images/**/*'],
-  views: ['views/**/*'],
   fonts: [],
   misc: [],
 };
 
 var dest = {
   images: roots.dist + 'images',
-  views: roots.dist,
   fonts: roots.dist + 'fonts',
   stylesheets: roots.dist + 'stylesheets',
   javascripts: roots.dist + 'javascripts',
@@ -48,8 +46,7 @@ gulp.task('clean:dist', function () {
     dest.images,
     dest.fonts,
     dest.stylesheets,
-    dest.javascripts,
-    dest.views + 'index.html'
+    dest.javascripts
   ], {
     force: true
   });
@@ -93,13 +90,6 @@ gulp.task('images', function () {
     .pipe(gulp.dest(dest.images));
 });
 
-gulp.task('views', function () {
-  return gulp.src(files.views, {
-      cwd: roots.app
-    })
-    .pipe(gulp.dest(dest.views));
-});
-
 gulp.task('misc', function () {
   return gulp.src(files.misc, {
       cwd: roots.app
@@ -137,8 +127,8 @@ gulp.task('webserver', function () {
 });
 
 var chains = {
-  default: ['clean:dist', 'sass', 'views', 'misc', 'js', 'fonts', 'images', 'watch', 'webserver'],
-  dist: ['clean:dist', 'minify', 'uglify', 'views', 'misc', 'fonts', 'images']
+  default: ['clean:dist', 'sass', 'misc', 'js', 'fonts', 'images', 'watch', 'webserver'],
+  dist: ['clean:dist', 'minify', 'uglify', 'misc', 'fonts', 'images']
 };
 
 gulp.task('default', chains.default);
