@@ -1,6 +1,8 @@
 # Amedia-leser - http://leser.ruud.ninja
 
-Les *alt* innhold fra alle Amedia-publikasjoner uten abonnement :eyeglasses:
+På grunn av endringer i API-et fungerer ikke dette lenger. :crying_cat_face:
+
+~~Les *alt* innhold fra alle Amedia-publikasjoner uten abonnement :eyeglasses:~~
 
 Leseren baserer seg på Amedias API. Les mer om dette her http://bed.api.no/api/acpcomposer/v1.1/doc/
 
